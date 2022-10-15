@@ -1,7 +1,7 @@
-package calcularRPN;
+package calcularPosfixa;
 
 public class Calculadora {
-	public static void lerRPN(String rpn, Pilha pilha) {
+	public static void lerPosfixa(String rpn, Pilha pilha) {
 		String operando = "";
 
 		for (int i = 0; i < rpn.length(); i++) {
@@ -33,7 +33,7 @@ public class Calculadora {
 	}
 
 	private static double calcular(Pilha pilha, char operador) {
-		if (pilha.qtdeElementos == 1) {
+		if (pilha.qtdElementos == 1) {
 			System.out.println("Operandos insuficientes para o calculo!");
 		}
 		
