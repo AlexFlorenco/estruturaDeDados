@@ -1,4 +1,4 @@
-package calcularRPN;
+package calcularPosfixa;
 
 import java.util.Scanner;
 
@@ -8,25 +8,24 @@ public class Main {
 		Pilha pilha = new Pilha();
 		Scanner scan = new Scanner(System.in);
 
-		System.out.print("RPN: ");
+		System.out.print("Expressao Posfixa: ");
 		expressao = scan.nextLine();
 
-		Calculadora.lerRPN(expressao, pilha);
-		
-		if (pilha.qtdeElementos != 1 && pilha.pilha[pilha.fim] != Double.valueOf(0)) {
+		Calculadora.lerPosfixa(expressao, pilha);
+
+		if (pilha.qtdElementos != 1 && pilha.pilha[pilha.inicio] != Double.valueOf(0)) {
 			System.out.println("Operadores insuficientes para o calculo!");
 		}
-		
+
 		else {
-			if (pilha.qtdeElementos != 1) {
+			if (pilha.qtdElementos != 1) {
 				scan.close();
 				return;
 			}
-			
+
 			else {
 				System.out.print("Resultado: ");
-				pilha.peek();
-
+				pilha.peekAll();
 			}
 		}
 
