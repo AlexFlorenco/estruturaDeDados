@@ -4,3 +4,4 @@
 
 ### [Atividade 2: Converter uma expressão INFIXA para expressão POSFIXA](https://github.com/AlexFlorenco/estruturaDeDados/tree/master/converterInfixa/src/converterInfixa)
 
+### [Atividade 2.1: Integração das Atividades 1 e 2](https://github.com/AlexFlorenco/estruturaDeDados/tree/master/src/converterECalcular)
