@@ -4,7 +4,6 @@ public class ListaDupla {
   Node inicio;
   Node fim;
 
-
   public boolean addInicio(String value) {
     if (value == null) {
       return false;
