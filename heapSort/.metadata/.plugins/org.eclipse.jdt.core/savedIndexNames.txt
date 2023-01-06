@@ -1,1 +1,0 @@
-INDEX VERSION 1.131+C:\Users\Alex\Desktop\estruturaDeDados\estruturaDeDados\heapSort\.metadata\.plugins\org.eclipse.jdt.core
